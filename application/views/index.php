@@ -26,16 +26,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
    <p class="text-center">Tempat Booking Travel Termurah</p>
      <div class="container w3">
 		<form action="#" method="post" class="agile_form">
-<!-- HEAD -->
 		<div>
 			<nav>
 				<ul>
-					<li><a href="#" class="daftar">Login</a></li>
+					<li><a href="<?php echo base_url('index.php/welcome/login')?>" class="daftar">Login</a></li>
 					<li><a href="<?php echo base_url('index.php/welcome/input')?>" class="daftar">Input</a></li></li>
 				</ul>
 			</nav>
 		</div>
-<!-- CRUD -->
 		   <h2 class="w3layouts text-center">Easy Way To Book Tickets Online</h2>
 		   <ul class="agile_info_select">
 				 <li><input type="radio" name="view" id="excellent"> 
@@ -77,7 +75,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				  <select>
 					<option value="0">Select Classs</option>
 					<option value="3">Economy Class</option>
-					<option value="2"> Business Class</option>
+					<option value="2">Business Class</option>
 					<option value="1">First Class</option>
 				  </select>
 				</div>	
@@ -89,7 +87,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<option value="0">Adults</option>
 					<option value="1">0</option>
 					<option value="2">1</option>
-					<option value="3"> 2</option>
+					<option value="3">2</option>
 					<option value="4">3 or 3+</option>
 				 </select>
 				</div>	
@@ -98,7 +96,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<option value="0">Children</option>
 					<option value="1">0</option>
 					<option value="2">1</option>
-					<option value="3"> 2</option>
+					<option value="3">2</option>
 					<option value="4">3 or 3+</option>
 				 </select>
 				</div>

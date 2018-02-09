@@ -1,11 +1,10 @@
-<html>
+	<html>
 <head>
 	<title>Tampil Admin</title>
 </head>
 <body>
 	<center><h1>Tampil Admin</h1></center>
 <!-- >>>>>>> head -->
-	<center><?php echo anchor('welcome/tambah','Tambah Data'); ?></center>
 	<center><?php echo anchor('welcome/input','Tambah Data'); ?></center>
 <!-- >>>>>>> crud -->
 
@@ -29,7 +28,7 @@
 			<td><?php echo $u->level ?></td>
 			<td>
 			      <?php echo anchor('welcome/edit/'.$u->id,'Edit'); ?>
-                              <?php echo anchor('welcome/hapus/'.$u->id,'Hapus'); ?>
+                  <?php echo anchor('welcome/hapus/'.$u->id,'Hapus'); ?>
 			</td>
 		</tr>
 		<?php } ?>

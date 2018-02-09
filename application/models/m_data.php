@@ -21,5 +21,8 @@ class M_data extends CI_Model{
 	function hapus_data($where,$table){
 	$this->db->where($where);
 	$this->db->delete($table);
-}
+	}
+	function cek_login($table,$where){
+		return $this->db->get_where($table,$where);
+	}
 }
