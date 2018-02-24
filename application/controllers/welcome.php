@@ -82,6 +82,13 @@ class Welcome extends CI_Controller {
 		redirect('Welcome/tampil');
 	}
 	function login(){
+		$this->load->view('login');
+	}
+	function tampil_login(){
+		$this->load->view('tampil_login');
+	}
+
+	function aksi_login(){
 		$username= $this->input->post('username');
 		$password= $this->input->post('password');
 		$where =  array(
@@ -95,8 +102,8 @@ class Welcome extends CI_Controller {
 				'status'=>"login"
 			);
 			$this->session->set_userdata($data_session);
-
-			redirect('index.php/tlogin');
+			
+			redirect('Welcome/tampil_login');
 		}else{
 			echo "username dan password salah !";
 			echo anchor('login','back');
@@ -106,6 +113,20 @@ class Welcome extends CI_Controller {
 	function logout(){
 		$this->session->session_destroy();
 		redirect('Welcome/logout');
+	}
+
+	function cari_rute(){
+		$from=$this->input->get("from");
+		$to=$this->input->get("to");
+
+		$where = array (
+			'rute_from'=>$from,
+			'rute_to'=>$to
+		);
+
+		$data['rute']=$this->m_data->edit_data($where,'rute')->result();
+		$this->load->view('v_rute',$data);
+
 	}
 
 }

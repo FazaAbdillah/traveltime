@@ -32,6 +32,7 @@ body {
 	margin:0;
 	font-family: 'Asap', sans-serif;
 }
+
 h1,h2,h3,h4,h5,h6,input,p,a,select,button,textarea,label{
 	margin:0;
 	font-family: 'Asap', sans-serif;
@@ -74,6 +75,7 @@ label{
 	margin:0;
 	
 }
+
 .text-center {
 	text-align: center;
 }
@@ -465,7 +467,8 @@ input.name {
 	}
 	.agile_form ul li label {
     padding: 0.5em 0em 0.5em 0.7em;
-   } 
+   }
+
 }
 
 /* -- //Responsive code -- */
